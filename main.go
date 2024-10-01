@@ -131,6 +131,8 @@ func main() {
 	imageFiles := obtenerImagenes(*dirFlag)
 	images64 := convertir64(imageFiles, *dirFlag)
 
+	http.Handle("/templates/", http.StripPrefix("/templates/", http.FileServer(http.Dir("templates"))))
+
 	// Manejar la ruta principal "/"
 	http.HandleFunc("/", makeHandler(images64))
 
