@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #9d4b28;
+    padding:
+    0;
+    background-color:#f4edeb;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    border: 2px solid #9d4b28;
+    /*border-radius: 4px;*/
+    margin-bottom: 16px;
+    /*background-color: #8B8FAF; !* Un tono de azul claro de Material Design *!*/
+    padding: 20px;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #9d4b28;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.icons{
+    width: 30px;
+}
+
+.material-icons {
+    margin-right: 16px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Roboto, sans-serif;
+}
+
+.image-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-card {
+    background-color: #fcfcfc;; /* Azul típico de Material Design */
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.image-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.image-card:hover {
+    /* Estilos al pasar el ratón */
+    transform: scale(1.1); /* Aumentamos un 5% el tamaño */
+    transition: all 0.3s ease-in-out;
+}

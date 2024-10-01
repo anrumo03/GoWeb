@@ -4,17 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{.Title}}</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>{{.Title}}</h1>
-<h2>Hostname: {{.Hostname}}</h2>
-<img src="data:image/png;base64,{{.Imagen1}}" alt="Imagen 1">
-<img src="data:image/png;base64,{{.Imagen2}}" alt="Imagen 2">
-<img src="data:image/png;base64,{{.Imagen3}}" alt="Imagen 3">
-<ul>
-    <li>Computación en la nube</li>
-    <li>Andrés R - Juan G</li>
-    <li>2024-2</li>
-</ul>
+<main>
+    <header>
+
+        <h1>{{.Title}}</h1>
+        <h2>Hostname: {{.Hostname}}</h2>
+    </header>
+    <div class="container">
+        <div class="image-cards">
+            <div class="image-card">
+                <img src="data:image/png;base64,{{.Imagen1}}" alt="Imagen 1">
+            </div>
+            <div class="image-card">
+                <img src="data:image/png;base64,{{.Imagen2}}" alt="Imagen 2">
+            </div>
+            <div class="image-card">
+                <img src="data:image/png;base64,{{.Imagen3}}" alt="Imagen 3">
+            </div>
+        </div>
+    </div>
+    <section class="info-container">
+        <h2>Información</h2>
+        <div class="info-card">
+            <i class="material-icons"><img class="icons" src="fixed_imgs/cloud.png" alt="cloud_icon"></i>
+            <p>Computación en la nube</p>
+        </div>
+        <div class="info-card">
+            <i class="material-icons"><img class="icons" src="fixed_imgs/group.png" alt="group_icon"></i>
+            <p>Andrés R - Juan G</p>
+        </div>
+        <div class="info-card">
+            <i class="material-icons"><img class="icons" src="fixed_imgs/calendar.png" alt="calendar"></i>
+            <p>2024-2</p>
+        </div>
+    </section>
+</main>
 </body>
 </html>
